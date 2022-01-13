@@ -13,10 +13,10 @@ def calc(args):
     else:
         return "Something went wrong"
 if __name__ == '__main__':
+    #call from cammad line with syntax ::>>python cmdUtilityPython.py --x 90 --y 90 add
     parser = argparse.ArgumentParser()
     parser.add_argument('--x', type=float, default=1, help="Enter first number or Please contact yousaf2018@namal.edu.pk")
     parser.add_argument('--y', type=float, default=1, help="Enter second number or Please contact yousaf2018@namal.edu.pk")
     parser.add_argument('--o', type=str, default=1, help="This utility for calculation or Please contact yousaf2018@namal.edu.pk")
-
     args = parser.parse_args()
     sys.stdout.write(str(calc(args)))
